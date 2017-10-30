@@ -19,9 +19,9 @@ $factory->define(App\Product::class, function (Faker $faker) {
     return [
         'id' => $faker->int(),
         'nombre' => $faker->string(),
-        'minimo' => $faker->int(),
-        'precio_compra' => $faker->int(),
-        'precio_venta' => $faker->int()
+        'minimo' => $faker->int(),  
+        'precio_venta' => $faker->int(),
+        'fecha_vencimiento' => $faker->date(),
         
         
     ];
@@ -37,7 +37,7 @@ $factory->define(App\Cliente::class, function (Faker $faker) {
         'ciudad' => $faker->int(),
         'direccion' => $faker->int(),
         'telefono' => $faker->int(),
-        'email' => $faker->int()
+        'email' => $faker->int(),
         
         
     ];

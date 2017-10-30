@@ -1,7 +1,5 @@
 <div class="form-group">
 
-
-
 {!! Form::label('id','codigo')!!}
 {!! Form::number('id',null,['class'=> 'form-control'])!!}
 </div>
@@ -20,8 +18,8 @@
 
 <div class="form-group">
 
-{!! Form::label('precio_compra','Precio compra')!!}
-{!! Form::number('precio_compra',null,['class	'=> 'form-control'])!!}
+{!! Form::label('fecha_vencimiento','Fecha de vencimiento')!!}
+{!! Form::date('fecha_vencimiento',null,['class	'=> 'form-control'])!!}
 </div>
 
 

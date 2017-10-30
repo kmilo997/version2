@@ -26,9 +26,9 @@ class ProductRequest extends FormRequest
         return [
             'id' => 'required',
             'nombre' => 'required',
-            'minimo' => 'required',
-            'precio_compra' => 'required',
-            'precio_venta' => 'required'
+            'minimo' => 'required',  
+            'precio_venta' => 'required',
+            'fecha_vencimiento' => 'required'
            
         ];
     }

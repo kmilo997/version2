@@ -26,8 +26,9 @@ public function store(ProductRequest $request){
 $product->id = $request->id;
 $product->nombre = $request->nombre;
 $product->minimo = $request->minimo;
-$product->precio_compra = $request->precio_compra;
+
 $product->precio_venta = $request->precio_venta;
+$product->fecha_vencimiento = $request->fecha_vencimiento;
 
 $product->save();
 
@@ -56,8 +57,9 @@ $product = Product::find($id);
 $product->id = $request->id;
 $product->nombre = $request->nombre;
 $product->minimo = $request->minimo;
-$product->precio_compra = $request->precio_compra;
+
 $product->precio_venta = $request->precio_venta;
+$product->fecha_vencimiento = $request->fecha_vencimiento;
 
 $product->save();
 

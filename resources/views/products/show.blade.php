@@ -46,6 +46,7 @@
 														<th><h2><font color="green">Cantidad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></h2></th>
 														<th><h2><font color="green"> Precio compra</font> </h2></th>
 														<th><h2><font color="green"> Precio venta</font> </h2></th>
+														<th><h2><font color="green"> Vencimiento</font> </h2></th>
 </tr>
 <a href="{{ route('products.index')}}" class="btn btn-success button small btn-block btn-lg pull-rigth" pull-rigth><i class="fa fa-reply fa-2x " aria-hidden="true"></i>&nbsp;  Listado</a>
 
@@ -67,7 +68,8 @@
 	<h3><td><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $product->nombre}}</h4></td></h3>
 	<h3><td><h4>&nbsp;&nbsp;{{ $product->minimo}}</h4></td></h3>
 	<h3><td><h4>&nbsp;&nbsp;{{ $product->precio_compra}}</h4></td></h3>
-		<h3><td><h4>&nbsp;&nbsp;{{ $product->precio_venta}}</h4></td></h3>
+	<h3><td><h4>&nbsp;&nbsp;{{ $product->precio_venta}}</h4></td></h3>
+	<h3><td><h4>&nbsp;&nbsp;{{ $product->fecha_vencimiento}}</h4></td></h3>
 	</td>
 	</tr>
 	</table>

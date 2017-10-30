@@ -17,8 +17,8 @@ class CreateProductsTable extends Migration
             $table->int('id');           
             $table->string('nombre');
             $table->int('minimo');
-            $table->int('precio_compra');
             $table->int('precio_venta');
+            $table->date('fecha_vencimiento');
 
             $table->timestamps();
 
