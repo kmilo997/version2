@@ -40,13 +40,18 @@
 										<div class="table-wrapper">
 										        <table cellspacing="1" cellspacing="30">
 												<thead>
+
 													    <tr>
+
 														<td ><h2><font color="green">Codigo </font></h2></td>
+
 														<td ><h2><font color="green">&nbsp; Nombre Producto</font></h2></td>
+
 														<a href="{{ route('products.create')}}" class="btn btn-success button small btn-block btn-lg pull-rigth"><i class="fa fa-plus fa-2x" aria-hidden="true"></i>&nbsp; Nuevo</a>
-														<a href="{{ url('/exportarProductos')}}" class="btn btn-success button small btn-block btn-lg pull-rigth" style="width:50%"><i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i>&nbsp; Exportar a Excel</a>
+
+
+
 														
-														<a href="{{ url('/exportar')}}" class="btn btn-success button small btn-block btn-lg pull-rigth " style="width:50%"><i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i>&nbsp; Exportar a Excel</a>
 													</tr>
 												</thead>
 												
@@ -92,7 +97,10 @@
 {!! $products->render() !!}	
 	</div>
 						</div>
-
+						<br><br><br><br><br><br><br><br><br><br>
+<a href="{{ url('/exportarProductos')}}" class="btn btn-success button small btn-block btn-lg pull-rigth" ><i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i>&nbsp; Exportar a Excel</a>	
+														
+														<a href="{{ url('/exportar')}}" class="btn btn-danger button small btn-block btn-lg pull-rigth "><i class="fa fa-file-pdf-o  fa-2x" aria-hidden="true"></i>&nbsp; Exportar a pdf</a>
 						</div>
 						</div>
 						
@@ -100,11 +108,14 @@
 												
 											</table>
 										</div>
+
 											</table>
 										</div>
+
 									</section>
 </div>
 								<div class="clearfix"> </div>
+
 							</div>
 </div>
 </div></div></div></div>
