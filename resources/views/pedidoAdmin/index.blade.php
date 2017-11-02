@@ -43,6 +43,7 @@
 													    <tr>
 														<th><h2><font color="green"> ID </font></h2></th>
 														<th><h2><font color="green">&nbsp;&nbsp;Fecha Pedido</font></h2></th>
+														<a href="{{ url('/exportarPedidos')}}" class="btn btn-success button small btn-block btn-lg pull-rigth" ><i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i>&nbsp; Exportar a Excel</a>
 														
 														
 													</tr>

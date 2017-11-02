@@ -44,6 +44,7 @@
 														<th><h2><font color="green"> NIT </font></h2></th>
 														<th><h2><font color="green">Nombre</font></h2></th>
 														<a href="{{ route('proveedor.create')}}" class="btn btn-success button small btn-block btn-lg pull-rigth"><i class="fa fa-plus fa-2x" aria-hidden="true"></i>&nbsp; Nuevo</a>
+														<a href="{{ url('/exportarProveedores')}}" class="btn btn-success button small btn-block btn-lg pull-rigth" style="width:50%"><i class="fa fa-file-excel-o fa-2x" aria-hidden="true"></i>&nbsp; Exportar a Excel</a>
 														
 													</tr>
 												</thead>

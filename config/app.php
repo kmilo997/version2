@@ -178,6 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Acoustep\EntrustGui\EntrustGuiServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
     ],
 
@@ -231,6 +232,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
       'Html' => Collective\Html\HtmlFacade::class,
       'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+      'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 
 
     ],

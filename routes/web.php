@@ -37,6 +37,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('pedidoAdmin/despa/{id}/{tipo}', 'PedidoAdminController@despa')->name('despa');
 
+Route::get('/exportarProductos', 'ExcelController@exportarProductos');
+Route::get('/exportarPedidos', 'ExcelController@exportarPedidos');
+Route::get('/exportarProveedores', 'ExcelController@exportarProveedores');
+
 Route::get('/en', function () {
     return view('vendor/entrust-gui/users/create');
 });
