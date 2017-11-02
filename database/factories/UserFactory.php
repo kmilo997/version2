@@ -17,10 +17,10 @@ $factory->define(App\Product::class, function (Faker $faker) {
    
 
     return [
-        'id' => $faker->int(),
+        'id' => $faker->integer(),
         'nombre' => $faker->string(),
-        'minimo' => $faker->int(),  
-        'precio_venta' => $faker->int(),
+        'minimo' => $faker->integer(),  
+        'precio_venta' => $faker->integer(),
         'fecha_vencimiento' => $faker->date(),
         
         
@@ -32,12 +32,12 @@ $factory->define(App\Cliente::class, function (Faker $faker) {
    
 
     return [
-        'id' => $faker->int(),
+        'id' => $faker->integer(),
         'nombre' => $faker->string(),
-        'ciudad' => $faker->int(),
-        'direccion' => $faker->int(),
-        'telefono' => $faker->int(),
-        'email' => $faker->int(),
+        'ciudad' => $faker->integer(),
+        'direccion' => $faker->integer(),
+        'telefono' => $faker->integer(),
+        'email' => $faker->integer(),
         
         
     ];
@@ -49,7 +49,7 @@ $factory->define(App\Proveedor::class, function (Faker $faker) {
    
 
     return [
-    'id'=> $faker->int(),
+    'id'=> $faker->integer(),
         'Nombre' => $faker->string(),
         'Telefono' => $faker->string(),
         'Direccion' => $faker->string(),
@@ -66,12 +66,12 @@ $factory->define(App\Venta::class, function (Faker $faker) {
 
     return [
     
-         'id'=> $faker->int(),
+         'id'=> $faker->integer(),
          'fecha'=> $faker->date(),
-         'producto'=> $faker->int(),
+         'producto'=> $faker->integer(),
          'cliente'=> $faker->string(),
-         'unidades'=> $faker->int(),
-         'total' => $faker->int(),
+         'unidades'=> $faker->integer(),
+         'total' => $faker->integer(),
     ];
 });
 
@@ -81,13 +81,13 @@ $factory->define(App\Pedido::class, function (Faker $faker) {
  
      return [
      
-          'id'=> $faker->int(),
+          'id'=> $faker->integer(),
           'fecha'=> $faker->date(),
-          'producto'=> $faker->int(),
+          'producto'=> $faker->integer(),
           'cliente'=> $faker->string(),
-          'unidades'=> $faker->int(),
-          'total' => $faker->int(),
-          'tipo' => $faker->enum('choices', array('pendiente','completado','cancelado'));,
+          'unidades'=> $faker->integer(),
+          'total' => $faker->integer(),
+          'tipo' => $faker->integer(),
      ];
  });
 

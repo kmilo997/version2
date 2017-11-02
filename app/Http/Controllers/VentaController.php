@@ -29,6 +29,9 @@ function eliminar() {
 
 
 
+
+
+
   public function index(){
         $vent=Venta::orderBy('id','DESC')->paginate(10);
     	return view('venta.index',compact('vent'));

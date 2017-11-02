@@ -1,3 +1,9 @@
+
+<div class="form-group" >
+
+
+
+
 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 <div class="form-group">
     <label for="name">Name</label>

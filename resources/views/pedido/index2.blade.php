@@ -1,4 +1,4 @@
-@extends('inicio2')
+@extends('layout2')
 
 @section('content')
 
@@ -43,7 +43,7 @@
 													    <tr>
 														<th><h2><font color="green"> ID </font></h2></th>
 														<th><h2><font color="green">&nbsp;&nbsp;Fecha Pedido</font></h2></th>
-														<a href="{{ route('pedido.create')}}" class="btn btn-success button small btn-block btn-lg pull-rigth"><i class="fa fa-plus fa-2x" aria-hidden="true"></i>&nbsp; Nuevo</a>
+
 														
 													</tr>
 												</thead>

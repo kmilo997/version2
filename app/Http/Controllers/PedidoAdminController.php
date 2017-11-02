@@ -11,35 +11,23 @@ use App\Http\Requests\PedidoRequest;
 
 
 
-class PedidoController extends Controller
+class PedidoAdminController extends Controller
 {
 
 
-function registar() {
-    confirm("Se ha registrado correctamente ");
-}
 
-
-
-
-function eliminar() {
-    confirm("Se ha eliminado correctamente ");
-}
-
-
-
-
-
-  public function index(){
-        $ped=Pedido::orderBy('id','DESC')->paginate(10);
-    	return view('pedido.index',compact('ped'));
+ public function index(){
+        $ped=Pedido::where('tipo','=','0')->paginate(10);
+        return view('pedidoAdmin.index',compact('ped'));
     }
 
+
+ 
 
     public function create(){
         $producto =Product::all();
         $cliente =Cliente::all();
-        return view(('pedido.create'),compact('producto','cliente'));
+        return view(('pedidoAdmin.create'),compact('producto','cliente'));
     }
 
 public function store(PedidoRequest $request){
@@ -61,25 +49,30 @@ $ped->tipo = 0;
 
 $ped->save();
 
-    return redirect()->route('pedido.index');
+    return redirect()->route('pedidoAdmin.index');
     registar();
   
     
 }
 
-
+public function despa($id,$tipo){
+    $ped = Pedido::find($id);
+    $ped->tipo = $tipo;
+    $ped->save();
+    return view('pedidoAdmin.show',compact('ped'));
+    }
 
 public function edit($id){
     $ped = Pedido::find($id);
     $producto = Product::all();
      $cliente =Cliente::all();
-        return view('pedido.edit',compact('ped','producto','cliente'));
+        return view('pedidoAdmin.edit',compact('ped','producto','cliente'));
     }
 
 
 public function show($id){
     $ped = Pedido::find($id);
-        return view('pedido.show',compact('ped'));
+        return view('pedidoAdmin.show',compact('ped'));
     }
 
 
@@ -96,7 +89,7 @@ $ped->tipo = $request->tipo;
 $ped->save();
 
 
-    return redirect()->route('pedido.index');
+    return redirect()->route('pedidoAdmin.index');
     
     
 }
@@ -109,7 +102,7 @@ $ped->save();
         $ped = Pedido::find($id);
         $ped->delete();
         
-    	 return redirect()->route('pedido.index');
+    	 return redirect()->route('pedidoAdmin.index');
          
     }
 

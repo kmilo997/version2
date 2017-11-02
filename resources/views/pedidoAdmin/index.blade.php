@@ -1,4 +1,4 @@
-@extends('inicio2')
+@extends('layout2')
 
 @section('content')
 
@@ -43,7 +43,7 @@
 													    <tr>
 														<th><h2><font color="green"> ID </font></h2></th>
 														<th><h2><font color="green">&nbsp;&nbsp;Fecha Pedido</font></h2></th>
-														<a href="{{ route('pedido.create')}}" class="btn btn-success button small btn-block btn-lg pull-rigth"><i class="fa fa-plus fa-2x" aria-hidden="true"></i>&nbsp; Nuevo</a>
+														
 														
 													</tr>
 												</thead>
@@ -60,7 +60,7 @@
 
 	<td></font>
    
-	<a href="{{ route('pedido.show',$v->id)}}" class="btn btn-info  button small btn-block pull-rigth"><i class="fa fa-binoculars fa-2x fa-fw" aria-hidden="true"></i>&nbsp; Ver</a>
+	<a href="{{ route('pedidoAdmin.show',$v->id)}}" class="btn btn-info  button small btn-block pull-rigth"><i class="fa fa-binoculars fa-2x fa-fw" aria-hidden="true"></i>&nbsp; Despachar </a>
 	 
     </td>
 
@@ -69,7 +69,7 @@
 
 
 	
-		<form action="{{ route('pedido.destroy',$v->id)}}" method="post">
+		<form action="{{ route('pedidoAdmin.destroy',$v->id)}}" method="post">
 		{{csrf_field()}}
 		<input type="hidden" name="_method" value="DELETE">
 

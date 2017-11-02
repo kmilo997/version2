@@ -50,23 +50,37 @@
                                 </a>
                                 
 
-                                <BR><BR><BR><BR><BR><BR><ul class="dropdown-menu" role="menu">
+                                <BR><BR><BR><BR><ul class="dropdown-menu" role="menu">
 
 
                                 <li>
+
+
+
+                                <a href="{{ route('products.index') }}"
+                                            >
+                                            PRODUCTOS
+                                        </a>
+
+
+
+
+                                        <a href="{{ route('pedidoAdmin.index') }}"
+                                            >
+                                            PEDIDOS
+                                        </a>
+
+                                        <a href="{{ route('cliente.index') }}"
+                                            >
+                                            CLIENTES
+                                        </a>
+
+
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             SALIR
                                         </a>
-
-                                        <a href="{{ route('products.index') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            PRODUCTOS
-                                        </a>
-
-
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
@@ -93,21 +107,37 @@
                                 </a>
                                 
 
-                                <BR><BR><BR><BR><BR><BR><ul class="dropdown-menu" role="menu">
+                                <BR><BR><BR><BR><ul class="dropdown-menu" role="menu">
 
 
                                 <li>
+
+                                <a href="{{ route('products.index') }}"
+                                            >
+                                            PRODUCTOS
+                                        </a>
+
+
+
+
+                                        <a href="{{ route('pedidoAdmin.index') }}"
+                                            >
+                                            PEDIDOS
+                                        </a>
+
+                                        <a href="{{ route('cliente.index') }}"
+                                            >
+                                            CLIENTES
+                                        </a>
+
+
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             SALIR
                                         </a>
 
-                                        <a href="{{ route('products.index') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            PRODUCTOS
-                                        </a>
+                                      
 
 
 

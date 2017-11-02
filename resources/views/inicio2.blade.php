@@ -61,6 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <nav class="link-effect-8" id="link-effect-8">
                <ul class="nav navbar-nav">
                 <li><a href="{{route('pedido.index')}}">Pedido</a></li>
+                <li><a href="{{route('pedido.index')}}">Cotizacion</a></li>
              
                  
                 

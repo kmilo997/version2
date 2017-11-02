@@ -11,16 +11,18 @@
                         </div>
                     @endif
 
-                    Ha iniciado sesion correctamente, Redirigiendo en 3 segundos... 
+                    Ha iniciado sesion correctamente, Redirigiendo en 5 segundos... 
 
+                @if(Auth::user()->hasRole('admin'));
                     <META HTTP-EQUIV="REFRESH" CONTENT="3;{{ route('products.index')}}"> 
-</h2>
-
+                    @elseif(Auth::user()->hasRole('cliente'));
+                    <META HTTP-EQUIV="REFRESH" CONTENT="3;{{ route('pedido.index')}}"> 
+@endif
                                 
                             </div>
                         </header>
 
-                        <!-- Content -->
+                        <!-- Content 
                             
 
 <body> 
@@ -30,5 +32,5 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 @endsection

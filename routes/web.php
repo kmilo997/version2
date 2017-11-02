@@ -11,9 +11,12 @@
 |
 */
 
+
+
 Route::get('/', function () {
     return view('layout');
 });
+
 
 
 Route::resource('products', 'ProductController');
@@ -23,16 +26,16 @@ Route::resource('proveedor', 'ProveedorController');
 Route::resource('venta', 'VentaController');
 
 Route::resource('cliente', 'ClienteController');
+
 Route::resource('pedido', 'PedidoController');
 
 Auth::routes();
 
-
+Route::resource('pedidoAdmin', 'PedidoAdminController');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-
+Route::get('pedidoAdmin/despa/{id}/{tipo}', 'PedidoAdminController@despa')->name('despa');
 
 Route::get('/en', function () {
     return view('vendor/entrust-gui/users/create');
